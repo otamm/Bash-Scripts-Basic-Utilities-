@@ -6,12 +6,12 @@ A collection of bash scripts to perform common installs on Ubuntu machines. I've
 
 All directories have a "install-all.sh" script (including the root directory) for convenience, with install scripts ordered when a package has dependencies on another package. Run installs always prepended with `sudo`, such as:
 
-`sh
+```sh
 $sudo apt-get install docker/install-all.sh
-`
+```
 
 ## Directory Tree
-`sh
+```sh
 .
 ├── docker-scripts
 │   ├── install-docker-compose.sh
@@ -23,7 +23,7 @@ $sudo apt-get install docker/install-all.sh
 └── README.md
 
 2 directories, 6 files
-`
+```
 
 ## Static Versions:
 
