@@ -44,4 +44,5 @@ echo ""
 echo ""
 if [[ (($(which docker-compose)))]]; then
   echo "docker-compose successfully installed!"
+  docker-compose --version
 fi

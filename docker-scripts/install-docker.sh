@@ -60,6 +60,7 @@ echo ""
 echo ""
 if [[ (($(which docker)))]]; then
   echo "Docker successfully installed!"
+  docker --version
   echo ""
   echo ""
 fi
