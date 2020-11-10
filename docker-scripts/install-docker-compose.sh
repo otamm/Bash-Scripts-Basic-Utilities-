@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Run script prepended with 'sudo' as in $ sudo bash install-docker-compose.sh"
 if [[ !(($(which docker)))]]; then
   echo "Docker not found locally."
