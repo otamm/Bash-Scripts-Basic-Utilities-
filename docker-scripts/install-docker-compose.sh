@@ -16,7 +16,7 @@ fi
 #  echo "Terminating script execution."
 #  exit 1;
 #fi
-echo "Removing current docer-compose install, if existent..."
+echo "Removing current docker-compose install, if existent..."
 echo ""
 echo ""
 sudo rm /usr/local/bin/docker-compose

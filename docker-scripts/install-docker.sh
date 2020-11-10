@@ -58,4 +58,8 @@ echo ""
 sudo docker run hello-world
 echo ""
 echo ""
-echo "Seems that docker was successfully installed, nice!"
+if [[ (($(which docker)))]]; then
+  echo "Docker successfully installed!"
+  echo ""
+  echo ""
+fi
