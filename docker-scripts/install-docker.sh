@@ -6,7 +6,7 @@ echo ""
 echo "Uninstalling possible existing docker versions..."
 echo ""
 echo ""
-sudo apt-get remove docker docker-engine docker.io containerd runc
+sudo apt-get remove --assume-yes docker docker-engine docker.io containerd runc
 echo "Updating repos..."
 echo ""
 echo ""
@@ -16,7 +16,7 @@ echo ""
 echo "Installing required packages..."
 echo ""
 echo ""
-sudo apt-get install \
+sudo apt-get install --assume-yes \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -48,8 +48,8 @@ echo ""
 echo "Updating local repositories & installing required packages..."
 echo ""
 echo ""
-sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get update --assume-yes
+sudo apt-get install --assume-yes docker-ce docker-ce-cli containerd.io
 echo ""
 echo ""
 echo "Running Docker's hello-world..."
